@@ -483,7 +483,7 @@ def main():
             for attempt in range(1, 4):
                 try:
                     sb.uc_gui_click_captcha()
-                    time.sleep(12)
+                    time.sleep(30)
                 except Exception as e:
                     print(f"⚠️ 点击 Turnstile 出错: {e}")
 
@@ -511,7 +511,7 @@ def main():
                 print(f"续期按钮点击失败: {e}")
 
             print("⏳ 等待新的过期时间...")
-            sb.sleep(6)
+            sb.sleep(20~30)
 
             # 提取新的到期日期和倒计时
             new_page_text = sb.get_page_source()
